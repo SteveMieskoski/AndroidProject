@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.example.androidproject"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVer", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$supportLibsVer"
+    compile "com.android.support.constraint:constraint-layout:$constraintLayoutVer"
+
+    // Additional Libraries
+    compile "com.google.code.gson:gson:$gsonVer"
+    compile "com.squareup.retrofit2:retrofit:$retrofitVer"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitConverterGsonVer"
+    compile "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingInterceptorVer"
+    compile "com.github.PhilJay:MPAndroidChart:$MPAndroidChartVer"
+    compile "org.parceler:parceler-api:$parcelerVer"
+    annotationProcessor "org.parceler:parceler:$parcelerVer"
+    testCompile "junit:junit:$junitVer"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}

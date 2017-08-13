@@ -1,0 +1,13 @@
+ext {
+    supportLibsVer = "26.+"
+    constraintLayoutVer = "1.0.2"
+    espressoVer = "2.2.2"
+    junitVer = "4.12"
+    gsonVer = "2.8.1"
+    retrofitVer = "2.3.0"
+    retrofitConverterGsonVer = "2.3.0"
+    okhttpVer = "3.8.1"
+    okhttpLoggingInterceptorVer = "3.8.1"
+    MPAndroidChartVer = "v3.0.2"
+    parcelerVer = "1.1.6"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidProject</string>
+    <string name="tick_open">Open</string>
+    <string name="tick_close">Close</string>
+    <string name="tick_high">High</string>
+    <string name="tick_low">Low</string>
+    <string name="tick_volume">Volume</string>
+    <string name="tick_date">Date: </string>
+    <string name="tick_time">Time: </string>
+    <string name="search_error">Lookup Error! Please Try Another Ticker</string>
+</resources>
