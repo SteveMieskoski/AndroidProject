@@ -1,5 +1,5 @@
 
-#### A Little Android Project
+#### Example Android Application
 
 
 
